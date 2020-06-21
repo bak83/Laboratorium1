@@ -18,6 +18,12 @@ namespace Laboratorium1
 
 		public void UpdateLabels()
 		{
+			MyLabel.Refresh();
+			if (MyRadioButton.Checked)
+				MyLabel.Text = name + " postawił";
+			else
+				MyLabel.Text = name + " nie obstawia";
+			MyLabel.Refresh();
 
 		}
 
